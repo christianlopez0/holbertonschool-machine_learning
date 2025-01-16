@@ -2,6 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def change_scale():
     x = np.arange(0, 28651, 5730)  # Time points from 0 to 28650 with a step size of 5730
     t = 5730  # Half-life of C-14 in years
