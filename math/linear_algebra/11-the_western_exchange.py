@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-import numpy as np
+""" defines function that transposes a matrix using numpy """
+
 
 def np_transpose(matrix):
-    return matrix.T
+    """ returns new numpy.ndarray that is a transpose of a matrix """
+    return matrix.transpose()

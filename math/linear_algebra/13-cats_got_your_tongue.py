@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
+""" defines function that concatenates two matrices along axis using numpy """
+
+
 import numpy as np
 
-def np_elementwise(mat1, mat2):
-    add = mat1 + mat2
-    sub = mat1 - mat2
-    mul = mat1 * mat2
-    div = mat1 / mat2
-    return add, sub, mul, div
+
+def np_cat(mat1, mat2, axis=0):
+    """ returns new numpy.ndarray that is concatentation of two matrices """
+    return np.concatenate((mat1, mat2), axis=axis)
